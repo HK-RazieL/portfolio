@@ -66,7 +66,7 @@ export default function HeroSection() {
                         className="flex gap-2 items-center text-primary"
                     >
                         <Image
-                            src="/Modis-logo.jpg"
+                            src="/modis-logo.jpg"
                             alt="Modis logo"
                             height="50"
                             width="50"
@@ -79,7 +79,7 @@ export default function HeroSection() {
                         className="flex gap-2 items-center text-primary"
                     >
                         <Image
-                            src="/ISI-Emerging-Markets-Group-logo.jpg"
+                            src="/isi-emerging-markets-group-logo.jpg"
                             alt="ISI Emerging Markets Group logo"
                             height="50"
                             width="50"
