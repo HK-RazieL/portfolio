@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function ContactCard() {
     return (
         <div className="max-tablet:flex max-tablet:flex-col tablet:grid grid-cols-3 gap-2 text-white">
-            <div className="bg-gray-900 h-[180px] p-6 rounded-xl col-span-2 flex justify-center items-center animate-appearFromLeft2 tablet:animate-appearFromRight2">
+            <Link
+                href="mailto:stan.angelkov@gmail.com"
+                className="bg-gray-900 h-[180px] p-6 rounded-xl col-span-2 flex justify-center items-center hover:bg-gray-800 animate-appearFromLeft2 tablet:animate-appearFromRight2"
+            >
                 <div className="flex items-center gap-2 bg-gray-700 p-2 rounded-xl">
                     <Image
                         alt="github"
@@ -14,7 +17,7 @@ export default function ContactCard() {
                     />
                     stan.angelkov@gmail.com
                 </div>
-            </div>
+            </Link>
             <Link
                 href="https://github.com/HK-RazieL"
                 target="_blank"
