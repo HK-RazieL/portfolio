@@ -3,9 +3,9 @@ import { projects } from "@/constants/projects";
 
 export default function Projects() {
     return (
-        <main>
-            {projects.map((project: ProjectType) => (
-                <ProjectCard {...project} />
+        <main className="space-y-6">
+            {projects.map((project: ProjectType, index: number) => (
+                <ProjectCard {...project} index={index} key={project.title} />
             ))}
         </main>
     );

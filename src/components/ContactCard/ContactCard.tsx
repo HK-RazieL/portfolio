@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function ContactCard() {
     return (
-        <div className="grid grid-cols-3 gap-2 text-white">
-            <div className="bg-gray-900 h-[180px] p-6 rounded-xl col-span-2 flex justify-center items-center animate-appearFromRight">
+        <div className="max-tablet:flex max-tablet:flex-col tablet:grid grid-cols-3 gap-2 text-white">
+            <div className="bg-gray-900 h-[180px] p-6 rounded-xl col-span-2 flex justify-center items-center animate-appearFromLeft2 tablet:animate-appearFromRight2">
                 <div className="flex items-center gap-2 bg-gray-700 p-2 rounded-xl">
                     <Image
                         alt="github"
@@ -18,7 +18,7 @@ export default function ContactCard() {
             <Link
                 href="https://github.com/HK-RazieL"
                 target="_blank"
-                className="bg-gray-900 p-6 h-[180px] rounded-xl col-span-2 justify-center flex flex-col items-center hover:bg-gray-800 animate-appearFromTop"
+                className="bg-gray-900 p-6 h-[180px] rounded-xl col-span-2 justify-center flex flex-col items-center hover:bg-gray-800 animate-appearFromRight2 tablet:animate-appearFromTop2"
             >
                 <Image
                     alt="github"
@@ -32,7 +32,7 @@ export default function ContactCard() {
             <Link
                 href="https://www.linkedin.com/in/stanislav-angelkov-191a1484/"
                 target="_blank"
-                className="bg-gray-900 w-[200px] p-6 rounded-xl row-span-2 row-start-1 col-start-3 flex items-center justify-center hover:bg-gray-800 animate-appearFromLeft"
+                className="bg-gray-900 w-[300px] max-tablet:h-[200px] tablet:w-[200px] p-6 rounded-xl row-span-2 row-start-1 col-start-3 flex items-center justify-center hover:bg-gray-800 animate-appearFromBottom2 tablet:animate-appearFromLeft2"
             >
                 <Image
                     alt="github"
