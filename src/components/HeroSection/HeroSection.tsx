@@ -18,6 +18,16 @@ const usedTechnologies = [
     "mysql",
 ];
 
+const previousEmployers = [
+    {
+        company: "codelevate",
+        url: "https://www.codelevate.com/",
+        logo: "/codelevate-logo.jpg",
+    },
+    "codelevate",
+    "softserve",
+];
+
 export default function HeroSection() {
     return (
         <div className="note:grid note:grid-cols-3 note:grid-rows-3 justify-center max-note:space-y-4 note:gap-2 p-6 note:max-w-[850px]">
@@ -31,7 +41,7 @@ export default function HeroSection() {
                     that you would like to work on, feel free to contact me.
                 </p>
             </div>
-            <div className="note:col-span-1 note:row-span-2 border border-secondary rounded-xl p-4 animate-appearFromLeft2 note:animate-appearFromTop2 transition delay-[1000ms]">
+            <div className="space-y-4 note:col-span-1 note:row-span-2 border border-secondary rounded-xl p-4 animate-appearFromLeft2 note:animate-appearFromTop2 transition delay-[1000ms]">
                 <h2 className="text-h2 text-primary">Previous Employers</h2>
                 <div className="space-y-4">
                     <Link
