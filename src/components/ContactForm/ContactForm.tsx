@@ -37,7 +37,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="animate-appearFromBottom2 pt-10">
+        <div className="animate-appearFromBottom2 pt-5 pb-5">
             <AnimatePresence>
                 {!sent ? (
                     <motion.div

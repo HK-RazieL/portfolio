@@ -35,7 +35,7 @@ export default function ContactCard() {
             <Link
                 href="https://www.linkedin.com/in/stanislav-angelkov-191a1484/"
                 target="_blank"
-                className="bg-gray-900 w-[300px] max-tablet:h-[200px] tablet:w-[200px] p-6 rounded-xl row-span-2 row-start-1 col-start-3 flex items-center justify-center hover:bg-gray-800 animate-appearFromBottom2 tablet:animate-appearFromLeft2"
+                className="bg-gray-900 max-tablet:h-[200px] tablet:w-[200px] p-6 rounded-xl row-span-2 row-start-1 col-start-3 flex items-center justify-center hover:bg-gray-800 animate-appearFromBottom2 tablet:animate-appearFromLeft2"
             >
                 <Image
                     alt="github"
