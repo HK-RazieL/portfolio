@@ -1,0 +1,39 @@
+export type InputType = {
+    id?: string;
+    type: string;
+    placeholder?: string;
+    className?: string;
+    labelClassName?: string;
+    label?: string;
+    defaultValue?: string;
+};
+
+export default function Input({
+    id,
+    type,
+    className,
+    labelClassName,
+    label,
+    defaultValue,
+    placeholder,
+}: InputType) {
+    return (
+        <div className="relative flex w-full group transition-all ease-in-out py-2">
+            {label && label !== "" ? (
+                <label
+                    htmlFor={id ?? ""}
+                    className={`absolute top-[1rem] transition-all duration-300 group-focus-within:-translate-y-[1.5rem] ${labelClassName}`}
+                >
+                    {label}
+                </label>
+            ) : null}
+            <input
+                defaultValue={defaultValue}
+                id={id}
+                type={type}
+                placeholder={placeholder}
+                className={`p-2 !bg-transparent w-full placeholder:text-transparent focus:placeholder:text-secondary outline-none border-b border-secondary focus:border-b focus:border-secondary focus:border-t-0 ${className}`}
+            ></input>
+        </div>
+    );
+}

@@ -28,7 +28,7 @@ export default function RootLayout({
             <body
                 className={
                     inter.className +
-                    " flex flex-col justify-center items-center pt-4"
+                    " flex flex-col justify-center items-center pt-4 text-white"
                 }
             >
                 <NavBar />
