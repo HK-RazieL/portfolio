@@ -22,7 +22,7 @@ export const projects: ProjectType[] = [
         link: "https://github.com/HK-RazieL/Office-templating-tool",
         image: "/images/projects/office-templating-tool.png",
         description:
-            "This is the first thing I made while still studying at the academy. An office tool to help with my job at the time. Due to constraints it was entirely made with basic windows 8 notepad",
+            "This is the first thing I made while still studying at the academy. It's an office tool to help with my job at the time. Due to constraints, it was entirely made with basic Windows 8 Notepad",
         stack: ["JavaScript", "JQuery", "CSS"],
     },
 ];

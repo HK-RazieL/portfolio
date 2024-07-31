@@ -54,7 +54,7 @@ export default function ContactForm() {
                         <div>
                             <h2 className="text-h2">Contact me</h2>
                             <p className="text-secondary">
-                                You can also contact me through this form
+                                You can also contact me using this form
                             </p>
                         </div>
                         <form
@@ -77,8 +77,8 @@ export default function ContactForm() {
                                 placeholder="example@example.com"
                                 required
                             />
+                            <div className="flex flex-col gap-2 mt-4">
                             <label htmlFor="message">Message:</label>
-                            <div className="flex flex-col gap-2">
                                 <textarea
                                     required
                                     name="message"
