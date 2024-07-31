@@ -21,16 +21,17 @@ export default function ContactForm() {
                 formDataObj[key] = value;
             });
 
-            emailjs
-                .send(
-                    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
-                    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
-                    formDataObj,
-                    process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-                )
-                .then(() => {
-                    setSent(true);
-                });
+            // emailjs
+            //     .send(
+            //         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+            //         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+            //         formDataObj,
+            //         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+            //     )
+            //     .then(() => {
+            //         setSent(true);
+            //     });
+            setSent(true);
         } catch (error) {
             console.error(error);
         }
@@ -42,9 +43,9 @@ export default function ContactForm() {
                 {!sent ? (
                     <motion.div
                         key="form"
-                        initial={{ opacity: 0, y: 250 }}
+                        initial={{ opacity: 0, y: 350 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -350 }}
+                        exit={{ opacity: 0, y: 350 }}
                         transition={{ duration: 0.5 }}
                         className="space-y-4"
                     >
@@ -64,6 +65,7 @@ export default function ContactForm() {
                                 label="From:"
                                 id="from"
                                 placeholder="Terry Bogard"
+                                required
                             />
                             <Input
                                 name="email"
@@ -71,10 +73,12 @@ export default function ContactForm() {
                                 label="Email:"
                                 id="email"
                                 placeholder="example@example.com"
+                                required
                             />
                             <label htmlFor="message">Message:</label>
                             <div className="flex flex-col gap-2">
                                 <textarea
+                                    required
                                     name="message"
                                     id="message"
                                     rows={10}
@@ -85,15 +89,15 @@ export default function ContactForm() {
                             <button
                                 disabled={sent}
                                 type="submit"
-                                className="bg-gray-900 rounded p-1 hover:outline outline-[1px] outline-secondary"
+                                className="bg-gray-900 rounded p-1 hover:outline outline-[1px] outline-secondary flex items-center justify-center gap-2"
                             >
                                 Send
                                 {sent && (
                                     <Image
-                                        src="/icons/nodejs-icon.png"
+                                        src="/icons/checkmark-icon.png"
                                         alt="icon"
-                                        width="10"
-                                        height="10"
+                                        width="20"
+                                        height="20"
                                     />
                                 )}
                             </button>

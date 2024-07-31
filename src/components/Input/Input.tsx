@@ -10,6 +10,7 @@ export type InputType = {
     labelClassName?: string;
     label?: string;
     defaultValue?: string;
+    required?: boolean;
 };
 
 export default function Input({
@@ -21,6 +22,7 @@ export default function Input({
     label,
     defaultValue = "",
     placeholder,
+    required,
 }: InputType) {
     const [value, setValue] = useState<any>(defaultValue);
 
@@ -42,6 +44,7 @@ export default function Input({
                 placeholder={placeholder}
                 className={`p-2 !bg-transparent w-full placeholder:text-transparent focus:placeholder:text-secondary outline-none border-b border-secondary focus:border-b focus:border-secondary focus:border-t-0 ${className}`}
                 onChange={(e) => setValue(e.target.value)}
+                required={required}
             ></input>
         </div>
     );
