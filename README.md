@@ -1,1 +1,1 @@
-This is my attempt at a basic portfolio
+Welcome to my portfolio! Crafted with Next.js and styled using Tailwind CSS, this site showcases my latest projects and design skills. Every page is optimized for speed, responsiveness, and modern aesthetics, reflecting my expertise in full-stack development. Explore my work and see how I bring ideas to life with clean code and creative solutions.
