@@ -9,8 +9,6 @@ export default function ContactForm() {
     const [sent, setSent] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
-    console.log(process.env.NEXT_PUBLIC_VERCEL_URL)
-
     const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
         try {
             setIsLoading(true);
