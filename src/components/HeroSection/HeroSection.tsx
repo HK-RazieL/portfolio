@@ -30,7 +30,7 @@ const previousEmployers = [
 
 export default function HeroSection() {
     return (
-        <div className="note:grid note:grid-cols-3 note:grid-rows-3 justify-center max-note:space-y-4 note:gap-2 p-6 note:max-w-[850px]">
+        <div className="note:grid note:grid-cols-3 note:grid-rows-3 justify-center max-note:space-y-4 note:gap-2 p-6 note:max-w-[850px] h-screen">
             <div className="note:col-span-2 note:row-span-1 border border-secondary rounded-xl p-4 animate-appearFromLeft2 space-y-2">
                 <h2 className="text-primary text-h2">Who am I?</h2>
                 <p className="text-secondary">

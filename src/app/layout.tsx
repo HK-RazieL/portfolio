@@ -22,7 +22,7 @@ export default function RootLayout({
                 display: "inline-block",
                 background:
                     "linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(0,0,54,1) 99%, rgba(2,2,83,1) 100%)",
-                height: "100%",
+                height: "auto",
             }}
         >
             <body

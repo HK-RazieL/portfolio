@@ -5,7 +5,8 @@ import Tag from "../Tag/Tag";
 export type ProjectType = {
     image: string;
     title: string;
-    link: string;
+    link?: string;
+    github?: string;
     description: string;
     stack: string[];
     index?: number;
@@ -15,6 +16,7 @@ export default function ProjectCard({
     image,
     title,
     link,
+    github,
     description,
     stack,
     index,
@@ -40,18 +42,29 @@ export default function ProjectCard({
                         ))}
                     </div>
                 </div>
-                <Link
-                    href={link}
-                    target="_blank"
-                    className="bg-gray-950 rounded-xl hover:bg-gray-800 flex items-center justify-center p-4"
-                >
-                    <Image
-                        src="/icons/link-icon.png"
-                        height="30"
-                        width="30"
-                        alt={`Link to ${title}`}
-                    />
-                </Link>
+                {link && (
+                    <Link
+                        href={link}
+                        target="_blank"
+                        className="bg-gray-950 rounded-xl hover:bg-gray-800 flex items-center justify-center p-4"
+                    >
+                        <Image
+                            src="/icons/link-icon.png"
+                            height="30"
+                            width="30"
+                            alt={`Link to ${title}`}
+                        />
+                    </Link>
+                )}
+                {github && (
+                    <Link
+                        href={github}
+                        target="_blank"
+                        className="bg-gray-950 rounded-xl hover:bg-gray-800 flex items-center justify-center p-4"
+                    >
+                        GitHub
+                    </Link>
+                )}
             </div>
         </div>
     );

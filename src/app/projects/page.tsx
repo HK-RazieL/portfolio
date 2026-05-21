@@ -3,7 +3,7 @@ import { projects } from "@/constants/projects";
 
 export default function Projects() {
     return (
-        <main className="space-y-6">
+        <main className="space-y-6 pb-10">
             {projects.map((project: ProjectType, index: number) => (
                 <ProjectCard {...project} index={index} key={project.title} />
             ))}
